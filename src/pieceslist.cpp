@@ -4,16 +4,18 @@
 
 #include "pieceslist.h"
 
-PiecesList::PiecesList(int itemSize, bool dropable, QWidget *parent)
-    : QListWidget(parent), m_itemSize(itemSize),_dropable(dropable)
+PiecesList::PiecesList( QListView::Flow flow, bool dropable, QWidget *parent)
+    : QListWidget(parent), m_itemSize(100,100),_dropable(dropable)
 {
     setDragEnabled(true);
     setViewMode(QListView::IconMode);
-    setIconSize(QSize(m_itemSize, m_itemSize));
+    setIconSize(m_itemSize);
     setSpacing(10);
     setAcceptDrops(dropable);
     setDropIndicatorShown(true);
-	setMinimumSize(m_itemSize, m_itemSize);
+	setMinimumSize(m_itemSize);
+	setWrapping(false);
+	setFlow( flow );
     //setMaximumSize(100, 500);
 }
 
@@ -35,21 +37,23 @@ void PiecesList::dragMoveEvent(QDragMoveEvent *event)
 }
 
 
-void PiecesList::dropEvent(QDropEvent *event)
+void PiecesList::dropEvent(QDropEvent *ev)
 {
-    if (event->mimeData()->hasFormat("data/progitem")) {
-        QByteArray pieceData = event->mimeData()->data("data/progitem");
+	QPoint droppos = ev->pos();
+    if (ev->mimeData()->hasFormat("data/progitem")) {
+        QByteArray pieceData = ev->mimeData()->data("data/progitem");
         QDataStream dataStream(&pieceData, QIODevice::ReadOnly);
 
 		QPixmap pixmap;
         QString type;
         dataStream >> pixmap >> type;
-		addPiece(pixmap, type);
+		//addPiece(pixmap, type);
+		insertPiece(droppos,pixmap, type);
 
-        event->setDropAction(Qt::CopyAction);
-        event->accept();
+        ev->setDropAction(Qt::CopyAction);
+        ev->accept();
     } else
-        event->ignore();
+        ev->ignore();
 }
 
 void PiecesList::load(QString galleryName)
@@ -91,6 +95,17 @@ void PiecesList::addPiece(QPixmap pixmap, QString type)
     pieceItem->setData(Qt::UserRole+1, type);
     pieceItem->setFlags(Qt::ItemIsEnabled | Qt::ItemIsSelectable
                         | Qt::ItemIsDragEnabled);
+}
+
+void PiecesList::insertPiece(QPoint pos, QPixmap pixmap, QString type)
+{
+    QListWidgetItem *pieceItem = new QListWidgetItem();
+    pieceItem->setIcon(QIcon(pixmap));
+    pieceItem->setData(Qt::UserRole, QVariant(pixmap));
+    pieceItem->setData(Qt::UserRole+1, type);
+    pieceItem->setFlags(Qt::ItemIsEnabled | Qt::ItemIsSelectable
+                        | Qt::ItemIsDragEnabled);
+	insertItem(  pos.x() / this->m_itemSize.width() , pieceItem);
 }
 
 void PiecesList::startDrag(Qt::DropActions /*supportedActions*/)

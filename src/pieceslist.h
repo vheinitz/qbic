@@ -4,16 +4,18 @@
 #define PIECESLIST_H
 
 #include <QListWidget>
+#include <QSize>
 
 class PiecesList : public QListWidget
 {
     Q_OBJECT
 
 public:
-    PiecesList(int itemSize, bool dropable=false, QWidget *parent = 0);
+	PiecesList( QListView::Flow flow = QListView::TopToBottom, bool dropable=false, QWidget *parent = 0);
 
     void addPiece(QString cfg);
 	void addPiece(QPixmap pixmap, QString type);
+	void insertPiece(QPoint pos, QPixmap pixmap, QString type);
 
 	void load(QString galleryName);
 
@@ -23,7 +25,7 @@ protected:
     void dropEvent(QDropEvent *event);
     void startDrag(Qt::DropActions supportedActions);
 
-    int m_itemSize;
+    QSize m_itemSize;
 	bool _dropable;
 };
 
