@@ -22,16 +22,17 @@ PuzzleMain::PuzzleMain(QWidget *parent) :
 	ui->ltActors->addWidget(actors);
 
 
-	PiecesList  * pl1 = new PiecesList(progLane->itemSize(), true, this);
+    /*PiecesList  * pl1 = new PiecesList(progLane->itemSize(), true, this);
 	PiecesList  * pl2 = new PiecesList(progLane->itemSize(), true, this);
 	PiecesList  * pl3 = new PiecesList(progLane->itemSize(), true, this);
 
-	pl1->load("sensor");
+    pl1->load("sensor");
 
 	ui->ltProgr->addWidget(pl1);
 	ui->ltProgr->addWidget(pl2);
 	ui->ltProgr->addWidget(pl3);
-	//ui->ltProgr->addWidget(new ProgLane());
+    */
+	ui->ltProgr->addWidget(new ProgLane());
 	ui->ltUtils->addWidget(new WasteBox());
 
 
@@ -40,4 +41,11 @@ PuzzleMain::PuzzleMain(QWidget *parent) :
 PuzzleMain::~PuzzleMain()
 {
     delete ui;
+}
+
+int plcnt=0;
+void PuzzleMain::on_bAddProgLane_clicked()
+{
+    PiecesList  * pl = new PiecesList(plcnt++, true, this);
+    ui->ltProgr->addWidget( pl );
 }
