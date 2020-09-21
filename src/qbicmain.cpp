@@ -4,9 +4,9 @@
 #include "pieceslist.h"
 
 #include "wastebox.h"
-PuzzleMain::PuzzleMain(QWidget *parent) :
+QBicMain::QBicMain(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::PuzzleMain)
+    ui(new Ui::QBicMain)
 {
     ui->setupUi(this);
 	//ProgLane *progLane = new ProgLane();
@@ -22,31 +22,26 @@ PuzzleMain::PuzzleMain(QWidget *parent) :
 	ui->ltSensors->addWidget(sensors);
 	ui->ltActors->addWidget(actors);
 
-/*
-    PiecesList  * pl1 = new PiecesList(progLane->itemSize(), true, this);
-	PiecesList  * pl2 = new PiecesList(progLane->itemSize(), true, this);
-	PiecesList  * pl3 = new PiecesList(progLane->itemSize(), true, this);
-
-    //pl1->load("sensor");
-
-	ui->ltProgr->addWidget(pl1);
-	ui->ltProgr->addWidget(pl2);
-	ui->ltProgr->addWidget(pl3);
-    
-*/
 	ui->ltUtils->addWidget(new WasteBox());
-
-
 }
 
-PuzzleMain::~PuzzleMain()
+QBicMain::~QBicMain()
 {
     delete ui;
 }
 
-int plcnt=0;
-void PuzzleMain::on_bAddProgLane_clicked()
+//int plcnt=0;
+void QBicMain::on_bAddProgLane_clicked()
 {
 	Prog  * prog = new Prog;
+	connect( prog, SIGNAL(  remove( QObject* )  ), this, SLOT(  removeProgLane( QObject* )  ) );
+	_progLanes.append(prog);
     ui->ltProgr->addWidget( prog );
+}
+
+void QBicMain::removeProgLane( QObject*p )
+{
+	Prog *prog = qobject_cast<Prog*>(p);
+	_progLanes.removeAll( prog );
+    delete prog;
 }

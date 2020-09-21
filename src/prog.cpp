@@ -44,5 +44,5 @@ Prog::~Prog()
 
 void Prog::on_bRemove_clicked()
 {
-
+	emit remove( this );
 }

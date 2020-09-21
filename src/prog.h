@@ -21,6 +21,9 @@ private slots:
 
 private:
     Ui::Prog *ui;
+
+signals:
+	void remove( QObject* );
 };
 
 #endif // PROG_H
