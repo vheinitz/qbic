@@ -2,14 +2,15 @@
 #include "ui_qbicmain.h"
 #include "prog.h"
 #include "pieceslist.h"
-
+#include "runtime_sim.h"
 #include "wastebox.h"
 QBicMain::QBicMain(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::QBicMain)
 {
     ui->setupUi(this);
-	//ProgLane *progLane = new ProgLane();
+	RuntimeSim *runtimeSim = new RuntimeSim();
+	runtimeSim->show();
 
 
 	PiecesList *sensors = new PiecesList( QListView::TopToBottom, false, this);

@@ -4,353 +4,612 @@
 	Version="9,00"
 	Name="qbic"
 	ProjectGUID="{36482ABF-731A-331B-9F34-03AD98C69822}"
-	Keyword="Qt4VSv1.0">
+	Keyword="Qt4VSv1.0"
+	TargetFrameworkVersion="0"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32" />
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="debug\"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			ConfigurationType="1"
 			IntermediateDirectory="debug\"
-			UseOfMfc="0">
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
 			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="&quot;..\..\..\Qt\4.8.4\include\QtCore&quot;,&quot;..\..\..\Qt\4.8.4\include\QtGui&quot;,&quot;..\..\..\Qt\4.8.4\include&quot;,&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot;,&quot;debug&quot;,&quot;.&quot;,..\..\..\Qt\4.8.4\mkspecs\default"
-				AdditionalOptions="-Zm200 -w34100 -w34189"
-				AssemblerListingLocation="debug\"
-				BufferSecurityCheck="false"
-				DebugInformationFormat="3"
-				ExceptionHandling="1"
-				GeneratePreprocessedFile="0"
-				ObjectFile="debug\"
-				Optimization ="4"
-				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
-				ProgramDataBaseFileName=".\"
-				RuntimeLibrary="3"
-				RuntimeTypeInfo="true"
-				SuppressStartupBanner="true"
-				TreatWChar_tAsBuiltInType="false"
-				WarningLevel="3" />
+				Name="VCPreBuildEventTool"
+			/>
 			<Tool
-				Name="VCCustomBuildTool" />
+				Name="VCCustomBuildTool"
+			/>
 			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="c:\Qt\4.8.4\lib\qtmaind.lib c:\Qt\4.8.4\lib\QtGuid4.lib c:\Qt\4.8.4\lib\QtCored4.lib"
-				AdditionalLibraryDirectories="c:\Qt\4.8.4\lib"
-				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
-				GenerateDebugInformation="true"
-				IgnoreImportLibrary="true"
-				LinkTimeCodeGeneration="0"
-				OutputFile="$(OutDir)\qbic.exe"
-				ProgramDatabaseFile=""
-				SubSystem="2"
-				SuppressStartupBanner="true" />
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
 			<Tool
 				Name="VCMIDLTool"
+				WarningLevel="0"
 				DefaultCharType="0"
 				EnableErrorChecks="1"
-				WarningLevel="0" />
+			/>
 			<Tool
-				Name="VCPostBuildEventTool" />
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				Optimization="4"
+				AdditionalIncludeDirectories="&quot;..\..\..\Qt\4.8.4\include\QtCore&quot;,&quot;..\..\..\Qt\4.8.4\include\QtGui&quot;,&quot;..\..\..\Qt\4.8.4\include&quot;,&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot;,&quot;debug&quot;,&quot;.&quot;,..\..\..\Qt\4.8.4\mkspecs\default"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="1"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="false"
+				TreatWChar_tAsBuiltInType="false"
+				RuntimeTypeInfo="true"
+				AssemblerListingLocation="debug\"
+				ObjectFile="debug\"
+				ProgramDataBaseFileName=".\"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool" />
-			<Tool
-				Name="VCPreLinkEventTool" />
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG" />
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				AdditionalDependencies="c:\Qt\4.8.4\lib\qtmaind.lib c:\Qt\4.8.4\lib\QtGuid4.lib c:\Qt\4.8.4\lib\QtCored4.lib"
+				OutputFile="$(OutDir)\qbic.exe"
+				SuppressStartupBanner="true"
+				AdditionalLibraryDirectories="c:\Qt\4.8.4\lib"
+				GenerateDebugInformation="true"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				LinkTimeCodeGeneration="0"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="release\"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			ConfigurationType="1"
 			IntermediateDirectory="release\"
-			UseOfMfc="0">
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
 			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="&quot;..\..\..\Qt\4.8.4\include\QtCore&quot;,&quot;..\..\..\Qt\4.8.4\include\QtGui&quot;,&quot;..\..\..\Qt\4.8.4\include&quot;,&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot;,&quot;release&quot;,&quot;.&quot;,..\..\..\Qt\4.8.4\mkspecs\default"
-				AdditionalOptions="-Zm200 -w34100 -w34189"
-				AssemblerListingLocation="release\"
-				BufferSecurityCheck="false"
-				DebugInformationFormat="0"
-				ExceptionHandling="1"
-				GeneratePreprocessedFile="0"
-				ObjectFile="release\"
-				Optimization ="2"
-				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
-				ProgramDataBaseFileName=".\"
-				RuntimeLibrary="2"
-				RuntimeTypeInfo="true"
-				SuppressStartupBanner="true"
-				TreatWChar_tAsBuiltInType="false"
-				WarningLevel="3" />
+				Name="VCPreBuildEventTool"
+			/>
 			<Tool
-				Name="VCCustomBuildTool" />
+				Name="VCCustomBuildTool"
+			/>
 			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="c:\Qt\4.8.4\lib\qtmain.lib c:\Qt\4.8.4\lib\QtGui4.lib c:\Qt\4.8.4\lib\QtCore4.lib"
-				AdditionalLibraryDirectories="c:\Qt\4.8.4\lib"
-				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
-				GenerateDebugInformation="false"
-				IgnoreImportLibrary="true"
-				LinkIncremental="1"
-				LinkTimeCodeGeneration="0"
-				OutputFile="$(OutDir)\qbic.exe"
-				ProgramDatabaseFile=""
-				SubSystem="2"
-				SuppressStartupBanner="true" />
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
 			<Tool
 				Name="VCMIDLTool"
+				WarningLevel="0"
 				DefaultCharType="0"
 				EnableErrorChecks="1"
-				WarningLevel="0" />
+			/>
 			<Tool
-				Name="VCPostBuildEventTool" />
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				Optimization="2"
+				AdditionalIncludeDirectories="&quot;..\..\..\Qt\4.8.4\include\QtCore&quot;,&quot;..\..\..\Qt\4.8.4\include\QtGui&quot;,&quot;..\..\..\Qt\4.8.4\include&quot;,&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot;,&quot;release&quot;,&quot;.&quot;,..\..\..\Qt\4.8.4\mkspecs\default"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="1"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="false"
+				TreatWChar_tAsBuiltInType="false"
+				RuntimeTypeInfo="true"
+				AssemblerListingLocation="release\"
+				ObjectFile="release\"
+				ProgramDataBaseFileName=".\"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+				DebugInformationFormat="0"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool" />
-			<Tool
-				Name="VCPreLinkEventTool" />
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT" />
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				AdditionalDependencies="c:\Qt\4.8.4\lib\qtmain.lib c:\Qt\4.8.4\lib\QtGui4.lib c:\Qt\4.8.4\lib\QtCore4.lib"
+				OutputFile="$(OutDir)\qbic.exe"
+				LinkIncremental="1"
+				SuppressStartupBanner="true"
+				AdditionalLibraryDirectories="c:\Qt\4.8.4\lib"
+				GenerateDebugInformation="false"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				LinkTimeCodeGeneration="0"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
+	<References>
+	</References>
 	<Files>
 		<Filter
 			Name="Source Files"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath="src\main.cpp" />
+				RelativePath="src\main.cpp"
+				>
+			</File>
 			<File
-				RelativePath="src\pieceslist.cpp" />
+				RelativePath="src\pieceslist.cpp"
+				>
+			</File>
 			<File
-				RelativePath="src\prog.cpp" />
+				RelativePath="src\prog.cpp"
+				>
+			</File>
 			<File
-				RelativePath="src\qbicmain.cpp" />
+				RelativePath="src\qbicmain.cpp"
+				>
+			</File>
 			<File
-				RelativePath="src\wastebox.cpp" />
+				RelativePath="src\runtime_sim.cpp"
+				>
+			</File>
+			<File
+				RelativePath="src\wastebox.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath="src\pieceslist.h">
+				RelativePath="src\pieceslist.h"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\pieceslist.h"
-						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\pieceslist.h -o debug\moc_pieceslist.cpp"
 						Description="MOC src\pieceslist.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\pieceslist.h -o debug\moc_pieceslist.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\pieceslist.h"
 						Outputs="debug\moc_pieceslist.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\pieceslist.h"
-						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\pieceslist.h -o release\moc_pieceslist.cpp"
 						Description="MOC src\pieceslist.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\pieceslist.h -o release\moc_pieceslist.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\pieceslist.h"
 						Outputs="release\moc_pieceslist.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\prog.h">
+				RelativePath="src\prog.h"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\prog.h"
-						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\prog.h -o debug\moc_prog.cpp"
 						Description="MOC src\prog.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\prog.h -o debug\moc_prog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\prog.h"
 						Outputs="debug\moc_prog.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\prog.h"
-						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\prog.h -o release\moc_prog.cpp"
 						Description="MOC src\prog.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\prog.h -o release\moc_prog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\prog.h"
 						Outputs="release\moc_prog.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\qbicmain.h">
+				RelativePath="src\qbicmain.h"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\qbicmain.h"
-						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\qbicmain.h -o debug\moc_qbicmain.cpp"
 						Description="MOC src\qbicmain.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\qbicmain.h -o debug\moc_qbicmain.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\qbicmain.h"
 						Outputs="debug\moc_qbicmain.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\qbicmain.h"
-						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\qbicmain.h -o release\moc_qbicmain.cpp"
 						Description="MOC src\qbicmain.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\qbicmain.h -o release\moc_qbicmain.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\qbicmain.h"
 						Outputs="release\moc_qbicmain.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\wastebox.h">
+				RelativePath="src\runtime_sim.h"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\wastebox.h"
-						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\wastebox.h -o debug\moc_wastebox.cpp"
-						Description="MOC src\wastebox.h"
-						Outputs="debug\moc_wastebox.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+						Description="MOC src\runtime_sim.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\runtime_sim.h -o debug\moc_runtime_sim.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\runtime_sim.h"
+						Outputs="debug\moc_runtime_sim.cpp"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\wastebox.h"
-						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\wastebox.h -o release\moc_wastebox.cpp"
+						Description="MOC src\runtime_sim.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\runtime_sim.h -o release\moc_runtime_sim.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\runtime_sim.h"
+						Outputs="release\moc_runtime_sim.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\wastebox.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
 						Description="MOC src\wastebox.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\wastebox.h -o debug\moc_wastebox.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\wastebox.h"
+						Outputs="debug\moc_wastebox.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC src\wastebox.h"
+						CommandLine="C:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 src\wastebox.h -o release\moc_wastebox.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\moc.exe;src\wastebox.h"
 						Outputs="release\moc_wastebox.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
 			Name="Generated Files"
 			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
-			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}"
+			>
 			<File
-				RelativePath="debug\moc_pieceslist.cpp">
-				<FileConfiguration
-					Name="Release|Win32"
-					ExcludedFromBuild="true" />
-			</File>
-			<File
-				RelativePath="release\moc_pieceslist.cpp">
+				RelativePath="release\moc_pieceslist.cpp"
+				>
 				<FileConfiguration
 					Name="Debug|Win32"
-					ExcludedFromBuild="true" />
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="debug\moc_prog.cpp">
+				RelativePath="debug\moc_pieceslist.cpp"
+				>
 				<FileConfiguration
 					Name="Release|Win32"
-					ExcludedFromBuild="true" />
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="release\moc_prog.cpp">
+				RelativePath="release\moc_prog.cpp"
+				>
 				<FileConfiguration
 					Name="Debug|Win32"
-					ExcludedFromBuild="true" />
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="debug\moc_qbicmain.cpp">
+				RelativePath="debug\moc_prog.cpp"
+				>
 				<FileConfiguration
 					Name="Release|Win32"
-					ExcludedFromBuild="true" />
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="release\moc_qbicmain.cpp">
+				RelativePath="release\moc_qbicmain.cpp"
+				>
 				<FileConfiguration
 					Name="Debug|Win32"
-					ExcludedFromBuild="true" />
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="debug\moc_wastebox.cpp">
+				RelativePath="debug\moc_qbicmain.cpp"
+				>
 				<FileConfiguration
 					Name="Release|Win32"
-					ExcludedFromBuild="true" />
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="release\moc_wastebox.cpp">
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true" />
-			</File>
-			<File
-				RelativePath="debug\qrc_qbic.cpp">
+				RelativePath="debug\moc_runtime_sim.cpp"
+				>
 				<FileConfiguration
 					Name="Release|Win32"
-					ExcludedFromBuild="true" />
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="release\qrc_qbic.cpp">
+				RelativePath="release\moc_runtime_sim.cpp"
+				>
 				<FileConfiguration
 					Name="Debug|Win32"
-					ExcludedFromBuild="true" />
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="ui_prog.h" />
+				RelativePath="release\moc_wastebox.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+			</File>
 			<File
-				RelativePath="ui_qbicmain.h" />
+				RelativePath="debug\moc_wastebox.cpp"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="release\qrc_qbic.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="debug\qrc_qbic.cpp"
+				>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui_prog.h"
+				>
+			</File>
+			<File
+				RelativePath="ui_qbicmain.h"
+				>
+			</File>
+			<File
+				RelativePath="ui_runtime_sim.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Form Files"
 			Filter="ui"
 			UniqueIdentifier="{99349809-55BA-4b9d-BF79-8FDBB0286EB3}"
-			ParseFiles="false">
+			ParseFiles="false"
+			>
 			<File
-				RelativePath="src\prog.ui">
+				RelativePath="src\prog.ui"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\prog.ui"
-						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\prog.ui -o ui_prog.h"
 						Description="UIC src\prog.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\prog.ui -o ui_prog.h&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\prog.ui"
 						Outputs="ui_prog.h"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\prog.ui"
-						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\prog.ui -o ui_prog.h"
 						Description="UIC src\prog.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\prog.ui -o ui_prog.h&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\prog.ui"
 						Outputs="ui_prog.h"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\qbicmain.ui">
+				RelativePath="src\qbicmain.ui"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\qbicmain.ui"
-						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\qbicmain.ui -o ui_qbicmain.h"
 						Description="UIC src\qbicmain.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\qbicmain.ui -o ui_qbicmain.h&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\qbicmain.ui"
 						Outputs="ui_qbicmain.h"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\qbicmain.ui"
-						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\qbicmain.ui -o ui_qbicmain.h"
 						Description="UIC src\qbicmain.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\qbicmain.ui -o ui_qbicmain.h&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\qbicmain.ui"
 						Outputs="ui_qbicmain.h"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\runtime_sim.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC src\runtime_sim.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\runtime_sim.ui -o ui_runtime_sim.h&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\runtime_sim.ui"
+						Outputs="ui_runtime_sim.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC src\runtime_sim.ui"
+						CommandLine="C:\Qt\4.8.4\bin\uic.exe src\runtime_sim.ui -o ui_runtime_sim.h&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\uic.exe;src\runtime_sim.ui"
+						Outputs="ui_runtime_sim.h"
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
@@ -358,28 +617,32 @@
 			Name="Resource Files"
 			Filter="qrc;*"
 			UniqueIdentifier="{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}"
-			ParseFiles="false">
+			ParseFiles="false"
+			>
 			<File
-				RelativePath="src\qbic.qrc">
+				RelativePath="src\qbic.qrc"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\rcc.exe;src\qbic.qrc"
-						CommandLine="C:\Qt\4.8.4\bin\rcc.exe -name qbic src\qbic.qrc -o debug\qrc_qbic.cpp"
 						Description="RCC src\qbic.qrc"
+						CommandLine="C:\Qt\4.8.4\bin\rcc.exe -name qbic src\qbic.qrc -o debug\qrc_qbic.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\rcc.exe;src\qbic.qrc"
 						Outputs="debug\qrc_qbic.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCustomBuildTool"
-						AdditionalDependencies="C:\Qt\4.8.4\bin\rcc.exe;src\qbic.qrc"
-						CommandLine="C:\Qt\4.8.4\bin\rcc.exe -name qbic src\qbic.qrc -o release\qrc_qbic.cpp"
 						Description="RCC src\qbic.qrc"
+						CommandLine="C:\Qt\4.8.4\bin\rcc.exe -name qbic src\qbic.qrc -o release\qrc_qbic.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Qt\4.8.4\bin\rcc.exe;src\qbic.qrc"
 						Outputs="release\qrc_qbic.cpp"
-						Path="c:\Qt\4.8.4\bin" />
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>

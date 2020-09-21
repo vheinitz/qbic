@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>PuzzleMain</class>
- <widget class="QMainWindow" name="PuzzleMain">
+ <class>QBicMain</class>
+ <widget class="QMainWindow" name="QBicMain">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>QBic</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -267,7 +267,7 @@
   <connection>
    <sender>actionExit</sender>
    <signal>triggered()</signal>
-   <receiver>PuzzleMain</receiver>
+   <receiver>QBicMain</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
