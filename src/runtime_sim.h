@@ -9,6 +9,9 @@ namespace Ui {
 class RuntimeSim;
 }
 
+class QCheckBox;
+class QLineEdit;
+
 class RuntimeSim: public QWidget
 {
     Q_OBJECT
@@ -18,10 +21,15 @@ public:
     ~RuntimeSim();
 
 private slots:
+	void updatePins();
+	void processDigitalInput( bool );
+	void processAnalogInput( QString );
 
 
 private:
     Ui::RuntimeSim *ui;
+	QList <QCheckBox*> _digitalPins;
+	QList <QLineEdit*> _analogPins;
 
 };
 
